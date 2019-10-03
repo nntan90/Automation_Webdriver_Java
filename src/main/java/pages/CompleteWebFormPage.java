@@ -29,44 +29,46 @@ public class CompleteWebFormPage {
     private By selectMenuLocator = By.id("select-menu");
 
 
-
-    public CompleteWebFormPage(WebDriver driver){
+    public CompleteWebFormPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void inputFirstName(String firstName){
+    public void inputFirstName(String firstName) {
         driver.findElement(firstNameLocator).sendKeys(firstName);
     }
-    public void inputLastName(String lastName){
+
+    public void inputLastName(String lastName) {
         driver.findElement(lastNameLocator).sendKeys(lastName);
     }
-    public void inputJobTitle(String jobTitle){
+
+    public void inputJobTitle(String jobTitle) {
         driver.findElement(jobTitleLocator).sendKeys(jobTitle);
     }
+
     //select Radio Button
-    public void selectRadioBtnOpt1(){
+    public void selectRadioBtnOpt1() {
         driver.findElement(radioButton1Locator).click();
     }
-    public void selectRadioBtnOpt2(){
+
+    public void selectRadioBtnOpt2() {
         driver.findElement(radioButton2Locator).click();
     }
-    public void selectRadioBtnOpt3(){
+
+    public void selectRadioBtnOpt3() {
         driver.findElement(radioButton3Locator).click();
     }
+
     //Select checkbox
-    public void selectCheckBoxOpt1(){
+    public void selectCheckBoxOpt1() {
         driver.findElement(checkBox1Locator).click();
     }
-    public void selectCheckBoxOpt2(){
+
+    public void selectCheckBoxOpt2() {
         driver.findElement(checkBox2Locator).click();
     }
-    public void setCheckBox3Locator(){
+
+    public void setCheckBox3Locator() {
         driver.findElement(checkBox3Locator).click();
-    }
-    public void selectDropDownFied(){
-        Select
-
-
     }
 
 }
