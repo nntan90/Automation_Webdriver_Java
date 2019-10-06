@@ -28,6 +28,25 @@ public class HomePage {
         clickLink("Dropdown");
         return new DropDownPage(driver);
     }
+    public HoversPage clickHorvers(){
+        clickLink("Hovers");
+        return new HoversPage(driver);
+    }
+
+    public KeyPressesPage clickKeyPresses(){
+        clickLink("Key Presses");
+        return new KeyPressesPage(driver);
+    }
+
+    public JavaScriptAlertsPage clickJavaScriptAlerts(){
+        clickLink("JavaScript Alerts");
+        return new JavaScriptAlertsPage(driver);
+    }
+
+    public FileUploadPage clickFileUpload(){
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
 
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
