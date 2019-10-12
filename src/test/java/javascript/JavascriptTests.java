@@ -9,4 +9,9 @@ public class JavascriptTests extends BaseTests {
     public void testScrollToTable(){
         homePage.clickLargeDeepDom().scrollToTable();
     }
+
+    @Test
+    public void testScrollToParagraph(){
+        homePage.clickInfiniteScroll().scrollToParagraph(3);
+    }
 }

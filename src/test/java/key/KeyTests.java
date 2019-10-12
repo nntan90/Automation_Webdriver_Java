@@ -13,7 +13,7 @@ public class KeyTests extends BaseTests {
     public void testBackspace(){
         KeyPressesPage keyPressesPage = homePage.clickKeyPresses();
         keyPressesPage.enterText("A" + Keys.BACK_SPACE);
-        assertEquals(keyPressesPage.getResult(), "You entered: BACK_SPACE");
+        assertEquals(keyPressesPage.getResult(), "You entered: BACK_SPACE!");
     }
 
     @Test
